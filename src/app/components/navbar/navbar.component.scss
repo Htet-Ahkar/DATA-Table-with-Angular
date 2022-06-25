@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  .navbar {
+    width: 100%;
+    height: var(--navbarHeight);
+    background: linear-gradient(90.06deg, #6dbef3 -0.61%, #3148a6 99.96%);
+    padding: 0 12.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      color: white;
+      font-size: 2.625rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      user-select: none;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+
+      button {
+        cursor: pointer;
+        transition: all 0.1s ease-out;
+
+        svg {
+          fill: white;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+        }
+        &:focus {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+}

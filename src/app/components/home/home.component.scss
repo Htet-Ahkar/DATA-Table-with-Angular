@@ -1,0 +1,22 @@
+main {
+  width: 100%;
+  min-height: calc(100vh - var(--navbarHeight));
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 70%;
+    margin-top: 2rem;
+    table {
+      width: 100%;
+    }
+  }
+}
+
+.hover-effect {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--primary-color);
+  }
+}

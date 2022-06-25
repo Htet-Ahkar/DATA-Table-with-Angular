@@ -1,0 +1,38 @@
+<div class="container" mat-dialog-content>
+  <!-- Name -->
+  <div *ngIf="data.elementId === 'name'">
+    <h2 mat-dialog-title>Name: {{ data.elementInnerText }}</h2>
+    <div>
+      <img
+        src="{{ data.photo }}"
+        alt="{{ data.elementInnerText }}"
+        class="photo"
+      />
+    </div>
+    <div class="btn-wraper">
+      <button mat-button mat-dialog-close>Close</button>
+    </div>
+  </div>
+  <!-- NRC -->
+  <div *ngIf="data.elementId === 'nrc'">
+    <h2 mat-dialog-title>NRC: {{ data.elementInnerText }}</h2>
+    <div>
+      <img
+        src="{{ data.nrcCard }}"
+        alt="{{ data.elementInnerText }}"
+        class="photo"
+      />
+    </div>
+    <div class="btn-wraper">
+      <button mat-button mat-dialog-close>Close</button>
+    </div>
+  </div>
+  <!-- Location -->
+  <div *ngIf="data.elementId === 'location'">
+    <h2 mat-dialog-title>Location: {{ data.elementInnerText }}</h2>
+    <app-google-map></app-google-map>
+    <div class="btn-wraper">
+      <button mat-button mat-dialog-close>Close</button>
+    </div>
+  </div>
+</div>
